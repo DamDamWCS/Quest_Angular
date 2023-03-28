@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <img src="{{ user.photo }}" alt="" />
+  <ul>
+    <li><b>Nom : </b>{{ user.name }}</li>
+    <li><b>Prénom : </b>{{ user.firstName }}</li>
+    <li *ngIf="showAge"><b>Age : </b>{{user.age}}</li>
+    <li><b>Citation : </b>{{ user.quote }}</li>
+    <li><b>modifier la citation : </b><input type="text" [(ngModel)]="user.quote" /></li>
+    <li><button (click)="showAge = !showAge">Afficher / Masquer l'age.</button></li>
+  </ul>
+</div>

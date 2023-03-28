@@ -14,7 +14,7 @@ export class SignupComponent {
   constructor() { }
   onSubmit(myForm:NgForm): void {
     console.log(this.model);
-    myForm.resetForm()
+    myForm.reset()
   }
 
 }

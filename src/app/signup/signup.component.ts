@@ -16,5 +16,5 @@ export class SignupComponent {
     console.log(this.model);
     myForm.reset()
   }
-
+ 
 }

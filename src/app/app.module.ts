@@ -7,13 +7,17 @@ import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
 import { ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
+import { DeveloperComponent } from './developer/developer.component';
+import { SkillComponent } from './developer/skill/skill.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
     MenuComponent,
-    SignupComponent
+    SignupComponent,
+    DeveloperComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,

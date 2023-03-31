@@ -14,10 +14,9 @@ export class DeveloperComponent {
     30,
     'homme',
     'I AM THE BEST DEVELOPER OF THE WORLD !',
-    []
+    [
+      new Skill('SKILL 1', 'LOGO SKILL 1', 'SITE SKILL 1'),
+      new Skill('SKILL 1', 'LOGO SKILL 1', 'SITE SKILL 1'),
+    ]
   );
-  skills: Skill[] = [
-    new Skill('SKILL 1', 'LOGO SKILL 1', 'SITE SKILL 1'),
-    new Skill('SKILL 1', 'LOGO SKILL 1', 'SITE SKILL 1'),
-  ];
 }

@@ -4,7 +4,7 @@
 <p>Age : {{developer.age}}</p>
 <p>Genre : {{developer.gender}}</p>
 <ul>Liste des Skills : 
-    <li *ngFor="let skill of skills">
+    <li *ngFor="let skill of developer.skills">
     <app-skill [skill]="skill"></app-skill>
 </li>
 </ul>

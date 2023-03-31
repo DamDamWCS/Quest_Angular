@@ -7,13 +7,15 @@ import { MenuComponent } from './menu/menu.component';
 import { SignupComponent } from './signup/signup.component';
 import { ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
+import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
     MenuComponent,
-    SignupComponent
+    SignupComponent,
+    CreateOnomatopiaComponent
   ],
   imports: [
     BrowserModule,

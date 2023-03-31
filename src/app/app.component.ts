@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Bienvenue sur le site de DamDamWCS !';
+  onomatopoeiaList: string[] = [];
+  onReceiveNewOnomatopia(event:string):void {
+this.onomatopoeiaList.push(event)
+console.log("reception")
+  }
 }

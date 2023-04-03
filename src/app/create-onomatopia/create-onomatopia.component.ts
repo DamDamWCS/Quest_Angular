@@ -11,11 +11,11 @@ export class CreateOnomatopiaComponent {
 
   newOnomatopia:Onomatopia = new Onomatopia();
 
-  @Output() sendOnomatopiaToParent: EventEmitter<string> = new EventEmitter();
+  @Output() sendOnomatopiaToParent: EventEmitter<Onomatopia> = new EventEmitter();
   createOnomatopia(): void {
     console.log("Valeur de newOnomatopia :",this.newOnomatopia.name);
-    this.sendOnomatopiaToParent.emit(this.newOnomatopia.name);
-    this.newOnomatopia.name=""
+    this.sendOnomatopiaToParent.emit(this.newOnomatopia);
+    this.newOnomatopia= new Onomatopia();
 
   }
 }

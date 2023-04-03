@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Onomatopia } from './models/onomatopia.model';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Bienvenue sur le site de DamDamWCS !';
-  onomatopoeiaList: string[] = [];
-  onReceiveNewOnomatopia(event:string):void {
+  onomatopoeiaList: Onomatopia[] = [];
+  onReceiveNewOnomatopia(event:Onomatopia):void {
 this.onomatopoeiaList.push(event)
-console.log("reception")
+console.log(this.onomatopoeiaList)
   }
 }

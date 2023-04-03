@@ -9,6 +9,7 @@ import { ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SkillComponent } from './skill/skill.component';
     MenuComponent,
     SignupComponent,
     DeveloperComponent,
-    SkillComponent
+    SkillComponent,
+    CocktailListComponent
   ],
   imports: [
     BrowserModule,

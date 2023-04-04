@@ -1,3 +1,5 @@
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs/internal/Observable';
 import { Injectable } from '@angular/core';
 import { Cocktail } from './models/coktail.model';
 
@@ -6,13 +8,9 @@ import { Cocktail } from './models/coktail.model';
 })
 export class CocktailService {
 
-  constructor() { }
+  constructor(public http: HttpClient) { }
 
-  public getCocktails():Cocktail[] {
-    return [
-      new Cocktail("Mojito","du rhum, de la menthe et du citron"),
-      new Cocktail("Tit ponch","du rhum et du sucre"),
-      new Cocktail("Chien enragé","Vodka et tabasco"),
-    ]
+  public getCocktails():Observable<Cocktail[]> {
+    return this.http.get<Cocktail[]>("assets/cocktails.json");
   }
 }

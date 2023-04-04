@@ -1,6 +1,7 @@
 export class Cocktail {
     constructor(
-        public name?: string,
-        public recette?: string,
+        public name: string,
+        public price: string,
+        public img: string,
     ) {}
 }
